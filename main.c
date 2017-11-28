@@ -36,26 +36,29 @@ int main (){
     printf ("PROGRAMA DICCIONARIO\n");
     printf ("====================\n");
     opcion = menu();
-	/* AÑADA AQUI EL CÓDIGO DE LA FUNCIÓN MAIN*/
-    switch(opcion){
-        case 1:{
-            //leer la cadena 
-            char cadena[MAX_PAL];
-            leeCadena(cadena,MAX_PAL);
-            printf("Esto es lo que leo %s",cadena);
-            break;
+	while( opcion < 4  && opcion>0 ){
+        switch(opcion){
+            case 1:{
+                //leer la cadena 
+                char cadena[MAX_PAL];
+                leeCadena(cadena,MAX_PAL);
+                printf("Esto es lo que leo %s",cadena);
+                break;
+            }
+            case 2:{
+                //traducir
+                printf ("Traducir palabra function\n");
+                break;
+            }
+            case 3:{
+                printf ("Mostrar diccionario\n");
+                //recorrer el array 
+                break;
+            }
         }
-        case 2:{
-            //traducir
-            printf ("Traducir palabra function\n");
-            break;
-        }
-        case 3:{
-            printf ("Mostrar diccionario\n");
-            //recorrer el array 
-            break;
-        }
+        opcion = menu();
     }
+    
 }
 
 int menu(){
