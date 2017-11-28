@@ -42,7 +42,7 @@ int main (){
             //leer la cadena 
             char cadena[MAX_PAL];
             leeCadena(cadena,MAX_PAL);
-            printf("%s",cadena);
+            printf("Esto es lo que leo %s",cadena);
             break;
         }
         case 2:{
